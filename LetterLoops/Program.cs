@@ -10,8 +10,7 @@ namespace LetterLoops
             var userInput = Console.ReadLine();
             var outString = "";
 
-            Console.WriteLine();
-            foreach (var userChar in userInput)
+            foreach (char userChar in userInput)
             {
                 var userCharIndex = userInput.IndexOf(userChar) + 1;
 
