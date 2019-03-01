@@ -17,7 +17,7 @@ namespace LetterLoops
 
                 for (int s = 0; s < userCharIndex; s++)
                 {
-                    if (i == 0)
+                    if (s == 0)
                     {
                         outString += userChar.ToString().ToUpper();
                     }
