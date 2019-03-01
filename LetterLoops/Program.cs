@@ -10,11 +10,12 @@ namespace LetterLoops
             var userInput = Console.ReadLine();
             var outString = "";
 
-            foreach (char userChar in userInput)
+            for (int i = 0; i < userInput.Length; i++)
             {
-                var userCharIndex = userInput.IndexOf(userChar) + 1;
+                var userChar = userInput[i];
+                var userCharIndex = i + 1;
 
-                for (int i = 0; i < userCharIndex; i++)
+                for (int s = 0; s < userCharIndex; s++)
                 {
                     if (i == 0)
                     {
@@ -25,7 +26,7 @@ namespace LetterLoops
                         outString += userChar.ToString().ToLower();
                     }
                 };
-                if (userInput.IndexOf(userChar) != userInput.Length - 1)
+                if (i != userInput.Length - 1)
                 {
                     outString += "-";
                 }
